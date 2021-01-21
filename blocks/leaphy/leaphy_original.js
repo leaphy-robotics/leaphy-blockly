@@ -133,6 +133,19 @@ Blockly.Blocks['leaphy_original_buzz'] = {
       this.setStyle('leaphy_blocks');
     },
 };
+
+Blockly.Blocks["leaphy_tmp_print_serial"] = {
+    init: function(){
+       this.appendDummyInput()
+            .appendField("Print Hello World");
+       this.setPreviousStatement(true, null);
+       this.setNextStatement(true, null);     
+       this.setStyle('leaphy_blocks');
+    }
+};
+
+
+
 //Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
 
 //]);  // END JSON EXTRACT (Do not delete this comment.)

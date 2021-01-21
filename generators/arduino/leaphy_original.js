@@ -66,3 +66,10 @@ Blockly.Arduino['leaphy_original_buzz'] = function(block) {
     var code = 'tone(4, ' + frequency + ', ' + duration + ');\n';
     return code;
   };
+
+  Blockly.Arduino['leaphy_tmp_print_serial'] = function(block) {
+    Blockly.Arduino.addInclude('arduino', '#include <arduino.h>');
+    Blockly.Arduino.addSetup('tone', 'Serial.begin(9600);', false);
+    var code = 'Serial.println("Hello from the Serial world!");\n';
+    return code;
+  };
